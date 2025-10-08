@@ -46,7 +46,7 @@
          <img width="817" height="498" alt="image" src="https://github.com/user-attachments/assets/c5c92e86-4692-45af-a918-040e5e1c98cc" />
         <br>
 - 필터 tap
-  - 이때 TC_FIFO는 다음과 같은 필터의 tap 계수를 저장하고 순서에 맞게 출력합니다.
+  - TC_FIFO는 다음과 같은 필터의 tap 계수를 저장하고 순서에 맞게 출력합니다.
     <br>  
         <img width="132" height="120" alt="image" src="https://github.com/user-attachments/assets/8bb1bac5-6777-4723-ba70-40518d21ca31" />
      <br>
