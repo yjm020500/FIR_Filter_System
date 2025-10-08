@@ -32,6 +32,10 @@
       - 실제 필터링하는 Calc_block을 Core FSM이 제어합니다.
        <br>
           <img width="876" height="476" alt="image" src="https://github.com/user-attachments/assets/12323e68-cc58-4bb7-9f38-55097617c0c9" />
+      
+       
+       [fir_filter](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Module/fir_filter_2d.v)
+
        <br>
        <br>
     - Calculation Block
@@ -53,9 +57,10 @@
     <br>  
         <img width="132" height="120" alt="image" src="https://github.com/user-attachments/assets/8bb1bac5-6777-4723-ba70-40518d21ca31" />
      <br>
-        - [fiter tap](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Module/filter_tap.dat)
-        <br>
-        <br>
+     [fiter tap](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Module/filter_tap.dat)
+    
+     <br>
+     <br>
 - 필터링 결과
       <br>
       <img width="436" height="220" alt="image" src="https://github.com/user-attachments/assets/882a4108-1b4f-4101-95aa-63fbba82c8c0" />
@@ -80,36 +85,43 @@
         <br>
     - 필터링 결과<br>
         <img width="632" height="326" alt="image" src="https://github.com/user-attachments/assets/f142925a-b6a6-425d-9308-97ecc5be7dce" />
-  <br>
-  <br>
+      <br>
+      <br>
+    - Testbench <br>
+      [fir_filter TB](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Testbench/FHD_filtering.v)
+    <br>
+    <br>
 
 ### 필터 변형
   - 하나의 필터 안에서 병렬 처리<br>
     <img width="625" height="370" alt="image" src="https://github.com/user-attachments/assets/0f63d733-d3e2-4fd5-9035-d87d569f290e" />
     <br>
     - 한 필터 안에 MAC 연산과 Sautration&Output reg를 병렬로 배치하여 계산합니다.
-    - code
-      10개 병렬 MAC and Saturation&Output reg
-    - Testbench
-      10개 병렬 MAC and Saturation&Output reg TB
+    - code <br> 
+      [10개 병렬 MAC and Saturation&Output reg](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Module/fir_filter_2d_pm.v)
+    - Testbench <br> 
+      [10개 병렬 MAC and Saturation&Output reg TB](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Testbench/FHD_filtering_pm.v)
       <br>
   - 여러 필터의 병렬 사용<br>
     <img width="691" height="348" alt="image" src="https://github.com/user-attachments/assets/7345bfbd-df9b-4c98-95f7-ab03a904bb0f" />
     <br>
     - 기본 필터 여러 개를 병렬로 처리합니다.
     - code <br>
-      4개 병렬 필터 <br>
-      16개 병렬 필터 <br>
-      64개 병렬 필터 <br>
+      [4개 병렬 필터](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Module/fir_filter_2d_top_4.v) <br>
+      [16개 병렬 필터](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Module/fir_filter_2d_top_16.v) <br>
+      [64개 병렬 필터](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Module/fir_filter_2d_top_64.v) <br>
+    <br>
+    
     - Testbench <br>
-      4개 병렬 필터 TB <br>
-      16개 병렬 필터 TB <br>
-      64개 병렬 필터 TB <br>
+      [4개 병렬 필터 TB](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Testbench/FHD_filtering_top_4.v) <br>
+      [16개 병렬 필터 TB](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Testbench/FHD_filtering_top_16.v) <br>
+      [64개 병렬 필터 TB](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Testbench/FHD_filtering_top_64.v) <br>
 <br>
 
 ### 최종 결과 <br>
   <img width="997" height="324" alt="image" src="https://github.com/user-attachments/assets/64f5be2d-d171-4e0a-be7f-46f12fe424c7" />
   <br>
+  
   - 성능 개선 결과: simulation상에서 걸린 시간을 비교합니다. <br>
   - 출력 개선 결과: 실제 필터링을 시작해서 이미지가 나올 때까지 걸린 시간을 비교합니다.
 
