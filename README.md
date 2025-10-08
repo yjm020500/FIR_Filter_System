@@ -32,26 +32,18 @@
       - 실제 필터링하는 Calc_block을 Core FSM이 제어합니다.
        <br>
           <img width="876" height="476" alt="image" src="https://github.com/user-attachments/assets/12323e68-cc58-4bb7-9f38-55097617c0c9" />
-      
        
        [fir_filter](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Module/fir_filter_2d.v)
 
-       <br>
-       <br>
     - Calculation Block
       - 필터링이 이루어지는 Calculation Block의 구조는 Demux → TC FIFO → MAC → Saturation&Output reg입니다.
          <br>
         <img width="619" height="562" alt="image" src="https://github.com/user-attachments/assets/ef54ce78-7d88-4dd6-88c0-3bb13f04199d" />
-        <br>
-        <br>
     - Core FSM
       - Core FSM은 다음과 같은 구조입니다.
         <br>
          <img width="817" height="498" alt="image" src="https://github.com/user-attachments/assets/c5c92e86-4692-45af-a918-040e5e1c98cc" />
         <br>
-        <br>
-      
-       
 - 필터 tap
   - 이때 TC_FIFO는 다음과 같은 필터의 tap 계수를 저장하고 순서에 맞게 출력합니다.
     <br>  
@@ -59,7 +51,6 @@
      <br>
      [fiter tap](https://github.com/yjm020500/FIR_Filter_System/blob/main/Code/Module/filter_tap.dat)
     
-     <br>
      <br>
 - 필터링 결과
       <br>
@@ -77,7 +68,6 @@
     4. 이때 외곽의 pixel들은 zero padding한 효과를 주기 위해 이미지 밖의 값을<br>
        가져와야 할 때는 pixel값 대신 0을 넣는 구조로 구성합니다.<br>
        <img width="389" height="257" alt="image" src="https://github.com/user-attachments/assets/55565291-ed4c-4149-8247-ac32e4dfc2c2" />
-    <br>
     <br>
   - 사용한 이미지 및 결과
     - 사용한 이미지<br>
