@@ -6,6 +6,7 @@
   - 개인 프로젝트를 통해 320x320 크기의 이미지를 Sobel 필터를 통해 edge detection합니다.<br>
   - 이후 팀을 구성하여 FHD 이미지를 Sobel 필터를 통한 edge detection합니다.<br>
   - Demux → TC FIFO → MAC → Saturation&Output reg로 이어지는 구조입니다.<br>
+  - 필터링은 Core FSM에 의해 컨트롤됩니다.<br>
   - 필터의 속도를 높일 수 있는 구조를 제작합니다.<br>
   - 자세한 내용은 아래 링크를 통해 확인 할 수 있습니다.
     <br>
