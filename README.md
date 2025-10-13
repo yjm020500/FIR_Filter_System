@@ -16,6 +16,12 @@
   
 <br>
 
+## 개발 환경
+- 언어: Verilog
+- Tool: Quartus, Questa
+
+<br>
+
 ## 상세 내용
 ### 프로젝트 목표
   - 1920x1080의 FHD 이미지를 Sobel 마스크를 통한 edge detection합니다.
